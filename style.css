@@ -34,6 +34,11 @@
     padding: 0 23px;
 
 }
+.menu__item,
+.menu__item a,
+.menu__item a.menu__link{
+    color:#2A2E39 !important;
+}
 .menu__list  .menu__item:last-child .menu__link  {
     padding: 6px 22px;
     background-color: var(--white);
