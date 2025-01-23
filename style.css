@@ -38,7 +38,7 @@
     padding: 6px 22px;
     background-color: var(--white);
     border-radius: 70px;
-    border: 1px solid var(--black)
+    border: 1px solid #2A2E39
 }
 .icon-menu{
     display: none;
@@ -49,7 +49,7 @@
 .menu__link {
     position: relative;
     display: inline-block;
-    color: var(--black);
+    color:#2A2E39;
     text-decoration: none;
     font-size: 16px;
     padding: 6px 0;
@@ -64,7 +64,7 @@
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: var(--black);
+    background-color: #2A2E39;
     transition: width 0.3s ease;
 }
 
@@ -78,13 +78,13 @@
     padding: 6px 22px;
     background-color: var(--white);
     border-radius: 70px;
-    border: 1px solid var(--black);
+    border: 1px solid #2A2E39;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 /* Ховер для последней ссылки */
 .menu__item:last-child .menu__link:hover {
-    background-color: var(--black);
+    background-color: #2A2E39;
     color: var(--white);
     border-color: var(--white);
 }
