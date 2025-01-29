@@ -1,5 +1,4 @@
-/* .wrapper {
-} */
+
 :root {
     --black: #2A2E39;
     --white: #FFFFFF;
@@ -15,16 +14,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-._container {
-}
-.header__logo {
-}
-.logo {
-}
-.header__menu {
-}
-.menu {
 }
 .menu__list {
     display: flex;
@@ -50,7 +39,6 @@
 }
 
 
-/* Общие стили для ссылок */
 .menu__link {
     position: relative;
     display: inline-block;
@@ -61,7 +49,6 @@
     transition: color 0.3s ease;
 }
 
-/* Анимация нижней линии */
 .menu__link::after {
     content: '';
     position: absolute;
@@ -73,12 +60,10 @@
     transition: width 0.3s ease;
 }
 
-/* Появление линии при наведении */
 .menu__link:hover::after {
     width: 100%;
 }
 
-/* Последняя ссылка */
 .menu__item:last-child .menu__link {
     padding: 6px 22px;
     background-color: var(--white);
@@ -87,23 +72,15 @@
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Ховер для последней ссылки */
-.menu__item:last-child .menu__link:hover {
+.menu__item.menu__item_contacts .menu__link:hover {
     background-color: #2A2E39;
-    color: var(--white);
+    color: var(--white) !important;
     border-color: var(--white);
 }
 
-/* Убираем нижнюю линию для последней ссылки */
 .menu__item:last-child .menu__link::after {
     display: none;
 }
-
-
-
-
-
-
 /* -----------------main-block ----------------------------- */
 .main-block__btn {
     position: relative;
@@ -168,14 +145,6 @@
     left: 100%; 
 }
 
-
-
-
-
-.page {
-}
-.page__main-block {
-}
 .main-block {
     padding: 40px 0 68px;
 }
@@ -218,7 +187,7 @@
 
 .how-work {
     position: relative;
-    padding: 68px 0 110px;
+    padding: 68px 0 80px;
 }
 .how-work__bg img{
     position: absolute;
@@ -326,13 +295,11 @@
 }
 .advantage {
     position: relative;
-    padding: 110px 0 70px;
+    padding: 90px 0 80px;
 }
 .advantage__conatiner {
     position: relative;
     z-index: 1;
-}
-.advantage__title {
 }
 .advantage__list {
     padding-top: 19px;
@@ -342,8 +309,6 @@
     padding: 17px 0;
     border-bottom: 2px solid var(--blue) ;
     display: flex;
-}
-.item-advantage {
 }
 .item-advantage__number {
     flex:  1  1 10%;
@@ -370,30 +335,14 @@
     position: absolute;
     top: 90px;
     left: 70%;
-    /* width: 100%; */
 }
 
-.advantage__bg img{
-
-    /* width: 100%; */
-}
-
-/* .why-we__bg{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-  }
-
-  .why-we__bg img{
-    width: 100%;
-  } */
 /* -----------------price-------------------------- */
 
 .page__price {
 }
 .price {
-    padding: 70px 0 160px;
+    padding: 70px 0 100px;
 }
 .price__conatiner {
 }
@@ -451,7 +400,6 @@
 }
 /* -----------------why-we-------------------------- */
 
-/* !there is bg */
 .why-we {
     position: relative;
     padding: 50px 0 75px;
@@ -487,8 +435,7 @@
 .why-we__question {
 max-width: 374px;
 }
-.question-why-we {
-}
+
 .question-why-we__title {
     margin-bottom: 18px;
 }
@@ -503,8 +450,7 @@ max-width: 374px;
     display: flex;
     align-items: start;
 }
-.item-why-we {
-}
+
 .item-why-we__img {
     margin-right: 12px;
 }
@@ -514,9 +460,6 @@ max-width: 374px;
     margin-bottom: 4px;
     color: var(--blue);
 }
-.item-why-we_regular {
-}
-
 .why-we__bg{
     position: absolute;
     top: 50%;
@@ -530,15 +473,12 @@ max-width: 374px;
 /* ----------------about-us-------------------------- */
 /* !there is bg */
 
-.page__about-us {
-}
+
 .about-us {
     padding: 154px 0 144px;
 
 }
-.about-us__conatiner {
-   
-}
+
 .about-us__body {
     padding-bottom: 42px;
     padding-top: 42px;
@@ -555,17 +495,12 @@ max-width: 374px;
 .about-us__title {
     margin-bottom: 40px;
 }
-.about-us__sub-title {
-}
-.about-us__description {
-}
+
 .about-us__list {
     display: flex;
     justify-content: space-between;
     margin: 0 -15px;
     margin-top: 40px;
-}
-.about-us__item {
 }
 
 .item-about-us{
@@ -577,8 +512,7 @@ max-width: 374px;
     width: 100%;
     margin-bottom: 24px;
 }
-.item-about-us__img {
-}
+
 .item-about-us__title {
     text-align: center;
     font-weight: 600;
@@ -592,8 +526,6 @@ max-width: 374px;
 }
 /* ----------------faq-------------------------- */
 
-.page__faq {
-}
 .faq {
     position: relative;
     padding: 144px 0 93px;
@@ -602,10 +534,7 @@ max-width: 374px;
     position: relative;
     z-index: 1;
 }
-.faq__title {
-}
-.faq__body {
-}
+
 .faq__list {
     display: flex;
     gap: 30px;
@@ -628,34 +557,21 @@ max-width: 374px;
 .faq__item:nth-child(4){
     flex: 1 1 40%;
 }
-.item-faq {
-}
-.item-faq__title {
-}
-.item-faq__description {
-}
 
 
 .faq__bg{
     position: absolute;
     top: 125px;
     left: 70%;
-    /* width: 100%; */
 }
 
-.faq__bg img{
-
-    /* width: 100%; */
-}
 /* ----------------contacts-------------------------- */
 
-.page__contacts {
-}
+
 .contacts {
     padding: 93px 0 0px;
 }
-.contacts__conatiner {
-}
+
 .contacts__body {
     position: relative;
 
@@ -693,7 +609,9 @@ max-width: 374px;
 }
 .contacts__phone {
 }
-
+.contacts__button{
+    margin-top: 40px;
+}
 .contacts__bg{
     position: absolute;
     bottom: 0;

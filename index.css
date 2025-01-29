@@ -135,10 +135,11 @@ h6 {
 
 .btn {
     border-radius: 70px;
-    color: var(--white);
+    color: var(--white) !important;
     background-color: var(--blue);
     height: 62px;
     font-size: 20px;
+    font-weight: 400;
 }
 .btn img{
     width: 42px !important;
