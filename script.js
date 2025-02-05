@@ -4,7 +4,7 @@ function gtag_report_conversion(url) {
         window.location = url;
       }
     };
-    gtag('event', 'conversion', {
+    gtag('event', 'request_demo', {
         'send_to': 'AW-806323095/GGGYCJGeuYoDEJeHvoAD',
         'event_callback': callback
     });
