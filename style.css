@@ -588,6 +588,10 @@ max-width: 374px;
 .block-mg-phone {
     margin-top: -110px;
 }
+.block-mg-phone img{
+    transform: rotate(7deg);
+}
+
 .contacts__form {
 }
 .form {
