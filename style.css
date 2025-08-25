@@ -59,6 +59,35 @@
     background-color: #2A2E39;
     transition: width 0.3s ease;
 }
+.menu__spacer{ flex:1; }
+
+.menu__cta .menu__btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:8px 18px; height:42px;
+  border-radius:70px;
+  background:var(--blue);
+  border:1px solid var(--blue);
+  color:var(--white) !important;
+  font-weight:600; line-height:1; text-decoration:none;
+  transition: background .2s ease, box-shadow .2s ease, transform .1s ease;
+}
+
+.menu__cta .menu__btn:hover{
+  background:var(--light-blue);
+  box-shadow:0 4px 15px rgba(63,95,177,.35);
+}
+.menu__cta .menu__btn:active{ transform:translateY(1px); }
+.menu__cta .menu__btn:focus-visible{
+  outline:3px solid rgba(92,127,219,.45); outline-offset:3px;
+}
+
+@media (max-width:768px){
+  .menu__list{ flex-direction:column; align-items:stretch; gap:12px; }
+  .menu__spacer{ display:none; }
+  .menu__cta .menu__btn{
+    width:100%; height:56px; font-size:18px;
+  }
+}
 
 .menu__link:hover::after {
     width: 100%;
